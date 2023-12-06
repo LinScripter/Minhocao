@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0f0c25;
+}
+
+.game-container {
+  position: relative;
+  width: 350px; /* Ajuste conforme necessário */
+  height: 350px; /* Ajuste conforme necessário */
+  border: 5px solid #ffffff; /* Borda branca */
+}
+
+.snake {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation: changeColor 6s infinite;/* 6s de duração para passar por todas as cores, infinitamente repetido */
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: green;
+  }
+  40% {
+    background-color: blue;
+  }
+  60% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: purple;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+/* Backgroud-color Apenas 1 Cor*/
+
+#score {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: -100px;
+  right: 200px;
+  font-size: 50px;
+}
